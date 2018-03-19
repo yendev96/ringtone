@@ -1,5 +1,5 @@
 <footer>
-<p>Copyright © 2018 Freeringtonemobile</p>
+<p>Copyright © 2018 Freeringtonesmobile</p>
 <?php wp_footer(); ?>
 </footer>
 
