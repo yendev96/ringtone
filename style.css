@@ -729,9 +729,7 @@ footer p{
 
 
 		@media only screen and (min-width: 1600px) {
-			.container-item {
-				width: 33.33333%;
-			}
+			
 
 			.container-item-category{
 				width: 33.333333%;
