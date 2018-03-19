@@ -22,7 +22,7 @@
 
 // Most dowload
 					if($cat_id == 14){
-						$data = get_all_top_view();
+						$data = get_top_view(30);
 						foreach($data as $post){
 							get_template_part('content','post-category');
 						}
