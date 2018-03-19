@@ -60,16 +60,22 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
-		getDuration("<?php echo get_audio_mp3($post->ID)?>", function(length) {
-			console.log('I got length ' + length);
-			document.getElementById("duration").textContent = length + ' s';
-		});
+		if("<?php echo get_audio_mp3($post->ID)?>"){
+			getDuration("<?php echo get_audio_mp3($post->ID)?>", function(length) {
+				if(length){
+					document.getElementById("duration").textContent = length + ' s';
+				}
+			});
+		}else{
+			document.getElementById("duration").textContent = '0s';
+		}
+		
 
 		get_filesize("<?php echo get_audio_mp3($post->ID)?>", function(size) {
 			if(size){
 				var size_audio = bytesToSize(size)
-			document.getElementById("size").textContent = size_audio;
-			document.getElementById("size2").textContent = size_audio;
+				document.getElementById("size").textContent = size_audio;
+				document.getElementById("size2").textContent = size_audio;
 			}else{
 				document.getElementById("size").textContent = "0KB";
 				document.getElementById("size2").textContent = "0KB";
