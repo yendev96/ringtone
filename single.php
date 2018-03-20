@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php setPostViews(get_the_ID()); ?>
-<section id="sec-ringtones" style="margin-top: 40px;padding-bottom: 100px;">
+<section id="sec-ringtones" style="margin-top: 80px;padding-bottom: 100px;">
 	<div class="container container-single">
 		
 		<div class="row">
@@ -50,7 +50,7 @@
 
 			<!--  -->
 			<div class="right-single">
-				<?php get_sidebar(); ?>
+				<?php //get_sidebar(); ?>
 			</div>
 
 		</div>

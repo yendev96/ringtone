@@ -1,34 +1,32 @@
 <div class="info-post">
-	<div class="hihi" style="display: inline-block; width: 100%; position: relative;">
-		<div class="left-info-post">
-			<h1><?php the_title(); ?></h1>
-			<p class="view-size">
-				<i class="fas fa-eye"> <?php echo getPostViews(get_the_ID()); ?></i>
-				<i class="fas fa-download"> <?php if($post->download_count == NULL){echo "0";}else{echo $post->download_count;} ?></i>
-				<i class="fas fa-file"> <span id="size2"></span></i>
-			</p>
-			<p>
+	<div class="left-info-post">
+		<h1><?php the_title(); ?></h1>
+		<p class="view-size">
+			<i class="fas fa-eye"> <?php echo getPostViews(get_the_ID()); ?></i>
+			<i class="fas fa-download"> <?php if($post->download_count == NULL){echo "0";}else{echo $post->download_count;} ?></i>
+			<i class="fas fa-file"> <span id="size2"></span></i>
+		</p>
+		<p>
 
-				<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=mp3');?>">
-					<button type="button" class="buton-download"><i class="fas fa-download"></i> Dowload MP3</button>
-				</a>
-				<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=m4r');?>">
-					<button type="button" class="buton-download" ><i class="fas fa-download"></i> Dowload M4R</button>
-				</a>
+			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=mp3');?>">
+				<button type="button" class="buton-download"><i class="fas fa-download"></i> Dowload MP3</button>
+			</a>
+			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=m4r');?>">
+				<button type="button" class="buton-download" ><i class="fas fa-download"></i> Dowload M4R</button>
+			</a>
 
 
-			</p>
-		</div>
-		<div class="post_qrcode" style="float: left; position: absolute; right: 0; bottom: 0;">
-			<img class="pull-right" src="https://chart.googleapis.com/chart?chs=130x130&amp;cht=qr&amp;chl=<?php echo get_domain('/dowload?id='.$post->ID);?>&amp;t=mp3" title="qr code link" alt="scan qr code to download">
-		</div>
+		</p>
+	</div>
+	<div class="post_qrcode" style="float: left; position: absolute; right: 0; bottom: 0;">
+		<img class="pull-right" src="https://chart.googleapis.com/chart?chs=130x130&amp;cht=qr&amp;chl=<?php echo get_domain('/dowload?id='.$post->ID);?>&amp;t=mp3" title="qr code link" alt="scan qr code to download">
 	</div>
 </div>
 <div id="my_jquery_jplayer_<?php echo $post->ID;?>" class="jp-jplayer"></div>
 <div id="my_jp_container_<?php echo $post->ID;?>" class="jp-audio" role="application" aria-label="media player" style="width: 100%;">
 	<div class="jp-type-single">
 		<div class="jp-gui jp-interface">
-			<div class="jp-controls">
+			<div class="jp-controls" style="width: 140px;">
 				<button class="jp-play" role="button" tabindex="0">play</button>
 				<button class="jp-stop" role="button" tabindex="0">stop</button>
 			</div>

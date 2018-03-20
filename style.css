@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6{
 .sub-menu{
 	display: none;
 	position: absolute;
-	top: 66px;
+	top: 51px;
 	left: 0px;
 	background: #000000ad;
 	width: 300px;
@@ -423,6 +423,9 @@ footer p{
 		border-bottom: 1px solid #d4d4d4; 
 		margin-bottom: 30px;
 		margin-top: 20px;
+		display: inline-block; 
+		width: 100%; 
+		position: relative;
 	}
 
 	.post-content{
@@ -585,7 +588,6 @@ footer p{
 
 	.container-single{
 		background: #fff;  
-		border-radius: 10px 10px 0 0;
 	}
 
 	.left-category{
@@ -610,6 +612,8 @@ footer p{
 		width: 30%;
 		float: left;
 	}
+
+
 	@media only screen and (min-width: 0px) {
 		.container-item {
 			width: 100%;
@@ -630,17 +634,7 @@ footer p{
 		
 	}
 
-	@media only screen and (max-width: 750px) {
-		.post_qrcode{
-			width: 100%;
-			display: none;
-		}
 
-		.left-info-post{
-			width: 100%
-		}
-		
-	}
 
 	@media only screen and (max-width: 1000px) {
 
@@ -651,7 +645,6 @@ footer p{
 		}
 
 		.right-single{
-			padding-right: 20px;
 			width: 100%;
 			float: left;
 			padding-left: 20px;
@@ -663,7 +656,21 @@ footer p{
 
 
 	@media only screen and (max-width: 800px) {
-		
+		.post_qrcode{
+			width: 100%;
+			display: none;
+		}
+
+		.title{
+			width: 100%;
+			padding-right: 2px;
+			padding-left: 20px;
+		}
+
+		.left-info-post{
+			width: 100%
+		}
+
 		
 		.logo{
 			text-align: left !important;
@@ -687,11 +694,11 @@ footer p{
 		}
 
 		.category ul{
+			text-align: left;
 			width: 100%;
 		}
 
 		.category ul li{
-			text-align: center;
 			padding: 10px;
 			width: 100%;
 		}
@@ -704,7 +711,6 @@ footer p{
 		}
 
 		.sub-menu li{
-			text-align: center;
 
 			width: 100%;
 		}
