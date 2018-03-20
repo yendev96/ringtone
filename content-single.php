@@ -8,11 +8,11 @@
 		</p>
 		<p>
 
-			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=mp3');?>">
-				<button type="button" class="buton-download"><i class="fas fa-download" rel="nofollow"></i> Dowload MP3</button>
+			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=mp3');?>"  rel="nofollow" title="Dowload <?php echo $post->post_title;?>">
+				<button type="button" class="buton-download"><i class="fas fa-download"></i> Dowload MP3</button>
 			</a>
-			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=m4r');?>">
-				<button type="button" class="buton-download" ><i class="fas fa-download" rel="nofollow"></i> Dowload M4R</button>
+			<a href="<?php echo get_domain('/dowload?id='.$post->ID.'&type=m4r');?>" rel="nofollow" title="Dowload <?php echo $post->post_title;?>">
+				<button type="button" class="buton-download" ><i class="fas fa-download"></i> Dowload M4R</button>
 			</a>
 
 		</p>

@@ -496,7 +496,6 @@ footer p{
 	color: #565656;
 	font-size: 16px;
 	margin-left: 20px;
-	font-size: 23px;
 }
 
 .title-aside h3{
@@ -504,7 +503,6 @@ footer p{
 	color: #565656;
 	font-size: 16px;
 	margin-left: 20px;
-	font-size: 23px;
 }
 
 .title-same-post p{
@@ -512,6 +510,14 @@ footer p{
 	margin-left: 20px;
 	color: #565656;
 	font-size: 20px;
+}
+
+.all-title h3{
+	font-size: 18px;
+}
+
+.all-title h2{
+	font-size: 18px;
 }
 
 .order-aside{
@@ -635,7 +641,7 @@ footer p{
 		width: 100%;
 
 	}
-	
+
 }
 
 
@@ -653,7 +659,7 @@ footer p{
 		float: left;
 		padding-left: 20px;
 	}
-	
+
 }
 
 
@@ -675,7 +681,7 @@ footer p{
 		width: 100%
 	}
 
-	
+
 	.logo{
 		text-align: left !important;
 		width: 100%;
@@ -720,7 +726,7 @@ footer p{
 	}
 
 
-	
+
 	.left-category{
 		padding-right: 0;
 	}
@@ -813,18 +819,18 @@ footer p{
 		width: 25%;
 	}
 
-	
+
 
 	.container {
 		width: 1200px;
 	}
 
-	
+
 
 
 
 	@media only screen and (min-width: 1600px) {
-		
+
 
 		.container-item-category{
 			width: 33.333333%;
@@ -839,6 +845,6 @@ footer p{
 		}
 	}
 
-	
+
 
 
