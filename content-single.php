@@ -52,11 +52,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="jp-details">
-			<div class="jp-title" aria-label="title"><h2>Download ringtone: <?php the_title(); ?></h2></div>
-		</div>
+		
 		
 	</div>
+</div>
+<div class="post-content">
+	<?php echo $post->post_content; ?>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -420,33 +420,47 @@ footer p{
 		margin-top: 20px;
 	}
 
+	.post-content{
+		margin-top: 25px;
+		color: #484848;
+	}
+
+	.post-content img{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.post-content h2{
+		font-size: 18px;
+	}
+
 
 	.info-post h1{
 		font-size: 25px;
 	}
 
 	.pagination{
-		    height: 43px;
+		height: 43px;
 	}
 
 	.pagination a{
 		padding: 10px 15px;
-    border: 1px solid #bfbfbf;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 3px;
-    color: #fff;
-    margin-right: 6px;
+		border: 1px solid #bfbfbf;
+		font-size: 15px;
+		font-weight: bold;
+		border-radius: 3px;
+		color: #fff;
+		margin-right: 6px;
 	}
 
 	.pagination span{
-		    background: #00000091;
-    padding: 10px 15px;
-    border: 1px solid #bdbdbd;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 3px;
-    margin-right: 6px;
+		background: #00000091;
+		padding: 10px 15px;
+		border: 1px solid #bdbdbd;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 3px;
+		margin-right: 6px;
 	}
 
 	.main-pagination{
