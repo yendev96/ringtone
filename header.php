@@ -78,6 +78,6 @@
 		</header><!-- /header -->
 		
 		<br><br>
-		<div class="container" style="margin-top: 100px;">
+		<div class="container">
 			<?php get_search_form(); ?>
 		</div>

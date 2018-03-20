@@ -60,9 +60,19 @@ h1, h2, h3, h4, h5, h6{
 	display: inline-block;
 }
 
+.container-single{
+	box-shadow: 3px 3px 3px #999;
+}
+
 .wraper{
+	background: url('image/bg.jpg');
 	position: relative;
 	min-height: 100%;
+}
+
+#sec-ringtones{
+	margin-top: 80px;
+	padding-bottom: 100px;
 }
 
 
@@ -409,8 +419,7 @@ footer p{
 
 .info-post{
 	border-bottom: 1px solid #d4d4d4; 
-	margin-bottom: 30px;
-	margin-top: 20px;
+	margin-bottom: 10px;
 	display: inline-block; 
 	width: 100%; 
 	position: relative;
@@ -494,15 +503,15 @@ footer p{
 .title-aside h2{
 	line-height: 40px;
 	color: #565656;
-	font-size: 16px;
 	margin-left: 20px;
+	font-size: 18px;
 }
 
 .title-aside h3{
 	line-height: 40px;
 	color: #565656;
-	font-size: 16px;
 	margin-left: 20px;
+	font-size: 18px;
 }
 
 .title-same-post p{
@@ -513,11 +522,13 @@ footer p{
 }
 
 .all-title h3{
-	font-size: 18px;
+	font-size: 15px;
+	color: #565656;
 }
 
 .all-title h2{
-	font-size: 18px;
+	font-size: 15px;
+	color: #565656;
 }
 
 .order-aside{
@@ -581,6 +592,10 @@ footer p{
 	color: #565656;
 	font-size: 20px;
 }
+
+.container-search{
+		margin-top: 100px;
+	}
 
 
 
@@ -688,6 +703,11 @@ footer p{
 
 	}
 
+	.container-search{
+		margin-top: 90px !important;
+	}
+
+
 	.button-show-hide{
 		display: block;
 	}
@@ -731,6 +751,11 @@ footer p{
 		padding-right: 0;
 	}
 
+	#sec-ringtones{
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
 }
 
 
@@ -745,6 +770,10 @@ footer p{
 		padding-left: 0;
 		width: 100%;
 		text-align: center;
+	}
+
+	.container-search{
+		margin-top: 140px;
 	}
 
 
