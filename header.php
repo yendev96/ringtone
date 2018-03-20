@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<?php 
-	wp_head();
-	?>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +20,9 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery.transform.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/mod.csstransforms.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/myquery.js"></script>
-
+	<?php 
+	wp_head();
+	?>
 
 	<script type="text/javascript">
 
@@ -79,6 +78,6 @@
 		</header><!-- /header -->
 		
 		<br><br>
-		<div class="container" style="margin-top: 140px;">
+		<div class="container" style="margin-top: 100px;">
 			<?php get_search_form(); ?>
 		</div>

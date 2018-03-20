@@ -31,7 +31,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="title-aside title-same-post all-title">
-									<h3><i class="fas fa-music icon-title"></i> SAME RINGTONES</h3>
+									<p><i class="fas fa-music icon-title"></i> SAME RINGTONES</p>
 								</div>
 								<?php 
 								get_post_same_category(6);
@@ -50,7 +50,7 @@
 
 			<!--  -->
 			<div class="right-single">
-				<?php //get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 			</div>
 
 		</div>

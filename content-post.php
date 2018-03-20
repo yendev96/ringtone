@@ -22,7 +22,7 @@
             <p class="view-size">
                 <i class="fas fa-eye"> <?php echo getPostViews(get_the_ID()); ?></i>
                 <i class="fas fa-download"> <?php if($post->download_count == NULL){echo "0";}else{echo $post->download_count;} ?></i>
-                <i class="fas fa-file"> <span id="size-<?php echo $post->ID;?>"></span> </i>
+                <i class="fas fa-file"> <span class="size-<?php echo $post->ID;?>"></span> </i>
             </p>
         </div>
     </div>
@@ -33,11 +33,17 @@
 
     get_filesize("<?php echo get_audio_mp3($post->ID)?>", function(size) {
         if(size){
-            var size_audio = bytesToSize(size);
-            document.getElementById("size-<?php echo $post->ID;?>").textContent = size_audio;
-        }else{
-            document.getElementById("size-<?php echo $post->ID;?>").textContent = '0KB';
-        }
+                var size_audio = bytesToSize(size);
+                var value = document.getElementsByClassName("size-<?php echo $post->ID;?>");
+                for (var i = 0; i < value.length; i++) {
+                  value[i].innerHTML = size_audio;;
+              }
+          }else{
+            var value = document.getElementsByClassName("size-<?php echo $post->ID;?>");
+            for (var i = 0; i < value.length; i++) {
+                value[i].innerHTML = '0KB';
+          }
+      }
         
 
     });

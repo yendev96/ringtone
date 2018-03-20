@@ -23,6 +23,10 @@ if(! function_exists('vanyen96_theme_setup')){
 	add_action('init','vanyen96_theme_setup' );
 }
 
+
+
+
+
 //==========Tao widget ================================================================================
 
 if(!function_exists ('yendev96_theme_widget')){
@@ -70,5 +74,7 @@ remove_action('wp_head', 'parent_post_rel_link', 10, 0);
 remove_action('wp_head', 'index_rel_link');
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head, 10, 0');
+remove_action('wp_head', 'title');
+//remove_action( 'wp_head', '_wp_render_title_tag', 1 );
 
 ?>

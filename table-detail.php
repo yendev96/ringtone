@@ -2,7 +2,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="title-detail-audio all-title">
-								<p><i class="fas fa-music icon-title"></i> Ringtone details</p>
+								<p><i class="fas fa-info-circle"></i> RINGTONE DETAILS</p>
 							</div>
 						</div>
 					</div>

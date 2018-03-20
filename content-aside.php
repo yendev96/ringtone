@@ -1,4 +1,4 @@
-<div class="container-item2" style="width: 100%;border: 1px solid #d4d4d4;margin-bottom: 4px;">
+<div class="container-item2">
     <div class="box-item-aside" style="display: inline-block;">
         <div id="jquery_jplayer_<?php echo $post->ID;?>" class="cp-jplayer"></div>
         <div id="cp_container_<?php echo $post->ID;?>" class="cp-container" style="float: left;">

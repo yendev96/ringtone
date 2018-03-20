@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="title-aside all-title">
-				<h3><i class="fas fa-music icon-title"></i> CHART RINGTONES</h3>
+				<h2><i class="fas fa-music icon-title"></i> CHART RINGTONES</h2>
 			</div>
 			<?php get_chart_aside(6); ?>
 			<div class="view-more">
@@ -18,7 +18,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="title-aside all-title">
-				<h3><i class="fas fa-music icon-title"></i> TOP DOWLOAD</h3>
+				<h2><i class="fas fa-music icon-title"></i> TOP DOWLOAD</h2>
 			</div>
 
 

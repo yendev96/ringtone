@@ -5,7 +5,7 @@
             <div class="left-category">
                 <div class="row">
                     <div class="title">
-                        <h1 style="color: #fff; margin-top: 4px;text-transform: uppercase;"><i class="fas fa-headphones"></i><?php single_cat_title(); ?></h1>
+                        <h1 style=""><i class="fas fa-headphones"></i><?php single_cat_title(); ?></h1>
                     </div>
                 </div>
                 <div class="row">
@@ -19,18 +19,12 @@
                         }
                     }
 
-                        // Chart view
-                    if($cat_id == 4){
-                        $data = get_chart(30);
-                        foreach($data as $post){
-                            get_template_part('content','post-category');
-                        }
-                        
-                    }
                     ?>
 
 
                     <?php
+
+                    
                         if( $wp_query->have_posts() ) { // Nếu phương thức have_posts() trả về TRUE thì mới chạy code bên trong
                             while( $wp_query->have_posts() ) { // Nếu have_posts() == TRUE thì nó mới lặp, không thì ngừng
                                 $wp_query->the_post(); // Thiết lập số thứ tự bài viết trong chỉ mục của query
@@ -53,16 +47,20 @@
                     <?php 
                     if($cat_id != 4){
 
-                     ?>
-                     <div class="aside-post">
+                       ?>
+                       <div class="aside-post">
                         <div class="row">
                             <div class="title-aside all-title">
-                                <h3 style="color: #fff; font-weight: bold;">
+                                <h2>
                                     <i class="fas fa-music icon-title"></i> 
-                                    CHART RINGTONES
-                                </h3>
+                                    NEW RINGTONES
+                                </h2>
                             </div>
-                            <?php get_chart_aside(6); ?>
+
+                            <?php 
+                            echo $a;
+                            get_post_new(6); 
+                            ?>
                             <div class="view-more">
                                 <a href="<?php echo get_category_link(14); ?>" title="">View more</a>
                             </div>
@@ -74,7 +72,7 @@
                 <div class="aside-post">
                     <div class="row">
                         <div class="title-aside all-title">
-                            <h3 style="color: #fff; font-weight: bold;">
+                            <h2>
                                 <i class="fas fa-music icon-title"></i> 
                                 <?php if($cat_id != 2){
                                     echo 'TOP DOWNLOAD';
@@ -83,7 +81,7 @@
                                     echo "RANDOM RINGTONES";
                                 } 
                                 ?>
-                            </h3>
+                            </h2>
                         </div>
                         <?php 
                         if($cat_id != 2){
@@ -91,6 +89,7 @@
                         }else{
                             $data = get_post_random(6);
                         }
+
                         foreach($data as $post){
                             get_template_part('content','aside' );
                         }
@@ -109,14 +108,14 @@
                     if($cat_id == 4){
 
 
-                       ?>
-                       <div class="aside-post">
+                     ?>
+                     <div class="aside-post">
                         <div class="row">
                             <div class="title-aside all-title">
-                                <h3 style="color: #fff; font-weight: bold;">
+                                <h2>
                                     <i class="fas fa-music icon-title"></i> 
                                     RANDOM RINGTONES
-                                </h3>
+                                </h2>
                             </div>
                             <?php 
                             $data = get_post_random(6);
