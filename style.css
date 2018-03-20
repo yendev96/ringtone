@@ -35,6 +35,21 @@ button.btn-success{
 }
 
 
+h1, h2, h3, h4, h5, h6{
+	text-transform: none;
+}
+
+.jp-title{
+	padding: 1px 20px !important;
+}
+
+.jp-title h2{
+	padding: 5px;
+	margin: 0;
+	font-size: 14px;
+	color: #4E4E4E;
+}
+
 
 
 .myheader{
@@ -184,6 +199,15 @@ footer {
 	color: #fff;
 	background: #000000ad;  /* Height of the footer */
 }
+
+footer p a{
+	color: #fff;
+}
+
+footer p a:hover{
+	color: #fff;
+}
+
 
 .buton-download{
 	text-align: center;
@@ -398,7 +422,7 @@ footer p{
 
 
 	.info-post h1{
-		font-size: 18px;
+		font-size: 25px;
 	}
 
 	.pagination{

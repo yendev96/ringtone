@@ -2,9 +2,9 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="title-aside all-title">
-				<h3><i class="fas fa-music icon-title"></i> TOP VIEW</h3>
+				<h3><i class="fas fa-music icon-title"></i> CHART RINGTONES</h3>
 			</div>
-			<?php get_top_view(5); ?>
+			<?php get_chart_aside(6); ?>
 			<div class="view-more">
 				<a href="<?php echo get_category_link(14); ?>" title="">View more</a>
 			</div>
@@ -23,7 +23,7 @@
 
 
 			<?php 
-				$data = get_top_dowload(5);
+				$data = get_top_dowload(6);
 				foreach($data as $post){
 					get_template_part('content','aside' );
 				}

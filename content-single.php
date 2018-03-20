@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div class="jp-details">
-			<div class="jp-title" aria-label="title"><?php the_title(); ?></div>
+			<div class="jp-title" aria-label="title"><h2>Download ringtone: <?php the_title(); ?></h2></div>
 		</div>
 		
 	</div>

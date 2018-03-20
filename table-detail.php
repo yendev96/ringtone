@@ -12,7 +12,7 @@
 
 						<tr>
 							<th><b>Title</b></th>
-							<td><?php the_title(); ?></td>
+							<td><h3 style="font-size: 16px;margin:0;"><?php the_title(); ?></h3></td>
 						</tr>
 						<tr>
 							<th>Created By</th>

@@ -140,7 +140,7 @@ function the_breadcrumb() {
 
 // ====================== LẤY BÀI VIẾT XEM NHIỀU  NHẤT ================
 
-function get_top_view($number_post){
+function get_chart_aside($number_post){
 
 	$get_top_view = new WP_Query(array(
 		'posts_per_page' => $number_post, 
@@ -158,8 +158,10 @@ function get_top_view($number_post){
 	}
 }
 
+// Lấy bài viết nhiều view nhất
 
-function get_all_top_view(){
+
+function get_chart(){
 
 	$posts = get_posts( array(
 		'posts_per_page' => $number_post, 
@@ -192,6 +194,7 @@ function get_top_view_category($number_post,$cat_id){
 
 }
 
+
 // ========================== LẤY BÀI VIẾT XEM NGẪU NHIÊN Ở TRANG CHỦ =================
 
 function get_post_random_on_home(){
@@ -213,18 +216,14 @@ function get_post_random_on_home(){
 // ========================== LẤY BÀI VIẾT XEM NGẪU NHIÊN TÙY BIẾN =================
 
 function get_post_random($number_post){
-	$query4 = new WP_Query(array(
+
+	$posts = get_posts( array(
 		'posts_per_page' => $number_post,
 		'orderby' => 'rand',
+	) );
 
-	));
+	return $posts;
 
-	if($query4 -> have_posts()){
-		while($query4 -> have_posts()){
-			$query4 -> the_post();
-			get_template_part('content','item');
-		}
-	}
 }
 
 // ============================= LẤY BÀI VIẾT Ở TRANG CHỦ =======================
