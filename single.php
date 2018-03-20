@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <?php setPostViews(get_the_ID()); ?>
 <section id="sec-ringtones" style="margin-top: 40px;padding-bottom: 100px;">
-	<div class="container" style="background: #fff;  border-radius: 10px 10px 0 0;">
+	<div class="container container-single">
 		
 		<div class="row">
-			<div class="col-lg-8 col-md-12">
+			<div class="left-single">
 				
 
 
@@ -49,7 +49,7 @@
 
 
 			<!--  -->
-			<div class="col-lg-4 col-md-12">
+			<div class="right-single">
 				<?php get_sidebar(); ?>
 			</div>
 

@@ -18,7 +18,7 @@
                             get_template_part('content','post-category');
                         }
                     }
-                    
+
                         // Chart view
                     if($cat_id == 4){
                         $data = get_chart(30);
@@ -34,9 +34,9 @@
                         if( $wp_query->have_posts() ) { // Nếu phương thức have_posts() trả về TRUE thì mới chạy code bên trong
                             while( $wp_query->have_posts() ) { // Nếu have_posts() == TRUE thì nó mới lặp, không thì ngừng
                                 $wp_query->the_post(); // Thiết lập số thứ tự bài viết trong chỉ mục của query
-                                
+
                                 get_template_part('content','post-category');
-                                
+
                             }
                         }
                         
@@ -52,9 +52,9 @@
                 <div class="right-category">
                     <?php 
                     if($cat_id != 4){
-                        
-                       ?>
-                       <div class="aside-post">
+
+                     ?>
+                     <div class="aside-post">
                         <div class="row">
                             <div class="title-aside all-title">
                                 <h3 style="color: #fff; font-weight: bold;">
@@ -95,17 +95,22 @@
                             get_template_part('content','aside' );
                         }
                         ?>
-                        <div class="view-more">
-                            <a href="<?php echo get_category_link(13); ?>" title="">View more</a>
-                        </div>
-                        
+
+                        <?php if($cat_id != 2){
+                            ?>
+                            <div class="view-more">
+                                <a href="<?php echo get_category_link(13); ?>" title="">View more</a>
+                            </div>
+                            <?php 
+                        }
+                        ?>
                     </div>
                     <?php 
                     if($cat_id == 4){
-                        
-                        
-                     ?>
-                     <div class="aside-post">
+
+
+                       ?>
+                       <div class="aside-post">
                         <div class="row">
                             <div class="title-aside all-title">
                                 <h3 style="color: #fff; font-weight: bold;">
@@ -119,9 +124,7 @@
                                 get_template_part('content','aside' );
                             }
                             ?>
-                            <div class="view-more">
-                                <a href="<?php echo get_category_link(14); ?>" title="">View more</a>
-                            </div>
+
                         </div>
                     </div>
                     <?php } ?>
