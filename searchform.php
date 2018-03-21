@@ -1,4 +1,4 @@
-<div class="container container-search">
+<div class="container-search">
 
 	<div class="row">
 		<div class="col-lg-6 col-md-8 col-sm-10" style="margin: 0 auto;">

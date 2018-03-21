@@ -7,7 +7,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="icon" href="<?php bloginfo('template_url');?>/image/logo.png"/>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/circle.player.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/jplayer.blue.monday.min.css">
@@ -77,7 +77,6 @@
 			</nav>
 		</header><!-- /header -->
 		
-		<br><br>
 		<div class="container">
 			<?php get_search_form(); ?>
 		</div>
